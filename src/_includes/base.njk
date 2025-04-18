@@ -1,0 +1,16 @@
+<!-- src/_includes/base.njk -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <header><h1>{{ title }}</h1></header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer><small>© {{ now | date("yyyy") }}</small></footer>
+</body>
+</html>
+
